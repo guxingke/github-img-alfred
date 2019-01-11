@@ -61,7 +61,8 @@ def process():
     width, height = _get_img_size(img_path)
 
     try:
-        cmd = 'cp {} {} && cd {} && git add . && git commit -m .  && git push '.format(img_path, LOCAL_GIT_REPO_PATH + '/' + SUBDIR, LOCAL_GIT_REPO_PATH)
+        cmd = 'cp {} {}'.format(img_path, LOCAL_GIT_REPO_PATH + '/' + SUBDIR, LOCAL_GIT_REPO_PATH)
+        
         os.system(cmd)
 
         # 完整的图片URI

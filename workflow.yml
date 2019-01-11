@@ -1,0 +1,46 @@
+category: Tools
+createdby: guxingke
+webaddress: guxingke.com
+bundleid: guxingke.com.alfred.workflows.github-img-alfred
+description: 快速上传图片到 Github，并获取Markdown格式的图片地址。
+disabled: false
+name: Markdown Img Github
+objects:
+- config:
+    action: 0
+    hotkey: 9
+    hotmod: 1310720
+    relatedAppsMode: 0
+    argument: 0
+    focusedappvariable: false
+    focusedappvariablename: ''
+    hotstring: V
+    leftcursor: false
+    modsmode: 0
+  uid: DD7E009D-52FA-4255-9623-FCFC8402C7DE
+  version: 2
+  type: alfred.workflow.trigger.hotkey
+- config:
+    script: "/usr/bin/python main.py"
+    scriptargtype: 1
+    concurrently: false
+    escaping: 102
+    type: 0
+    scriptfile: ''
+  uid: FC28359F-4135-477E-AD08-C025F2D134F2
+  version: 2
+  type: alfred.workflow.action.script
+readme: ''
+uidata:
+  DD7E009D-52FA-4255-9623-FCFC8402C7DE:
+    ypos: 120
+    xpos: 130
+  FC28359F-4135-477E-AD08-C025F2D134F2:
+    ypos: 120
+    xpos: 370
+connections:
+  DD7E009D-52FA-4255-9623-FCFC8402C7DE:
+  - modifiersubtext: ''
+    modifiers: 0
+    destinationuid: FC28359F-4135-477E-AD08-C025F2D134F2
+    vitoclose: false
